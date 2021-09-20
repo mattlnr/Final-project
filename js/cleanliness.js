@@ -12,18 +12,30 @@ function checkQuiz(event){
     total = total + parseFloat($(this).val());
     });
     console.log(total);
+    let imgToSet;
+
     if(total > 25) {
-		results.innerText = "You would enjoy a new Playstation!"
-		description.innerText = "Based on your answers, you would enjoy some of the newer games you can find with a Playstation 5. You would also enjoy a Playstation 4 if you are looking for a larger library of games. Playstation games tend to emphasize games with large worlds and immersive stories. You'll often find graphics that are pushing the limits of their generation."
+		results.innerText = "You would enjoy a new Playstation!";
+		description.innerText = "Based on your answers, you would enjoy some of the newer games you can find with a Playstation 5. You would also enjoy a Playstation 4 if you are looking for a larger library of games. Playstation games tend to emphasize games with large worlds and immersive stories. You'll often find graphics that are pushing the limits of their generation.";
+		imgToSet = imgOne;
 	} else if(total > 10) {
-		results.innerText = "Xbox!"
+		results.innerText = "Xbox!";
+		description.innerText = "Based on your answers, "
+		imgToSet = imgTwo;
 	} else if (total > -10) {
-		results.innerText ="Nintendo!"
+		results.innerText ="Nintendo!";
+		description.innerText = "Based on your answers, "
+		imgToSet = imgThree;
 	} else if (total > -25) {
 		results.innerText ="Sega!"
+		description.innerText = "Based on your answers, "
+		imgToSet = imgFour;
 	} else {
 		results.innerText ="Atari!"
+		description.innerText = "Based on your answers, "
+		imgToSet = imgFive;
 	}
+	resultImg.setAttribute("src", imgToSet);
 	resultsContainer.classList.remove('hide');
 	resultsContainer.classList.add('show');
 	form.classList.add('hide');

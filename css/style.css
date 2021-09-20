@@ -6,16 +6,8 @@ header{
 	padding: 0;
 }
 
-.hero-header{
-	background-color: red;
-}
-
-.hero-header img{
-	height: 400px;
-}
-
-.hero-html{
-	background-color:  lightblue;
+h2{
+	text-align: center;
 }
 
 .front_info{
@@ -25,6 +17,7 @@ header{
 body{
 	align-content: center;
 	background-color: #eeeeee;
+	border: solid black 2px;
 }
 
 .logo{
@@ -61,6 +54,43 @@ body{
   	width: 33%;
 }
 
+.quiz_button {
+  border-radius: 5px;
+  color: #000;
+  display: block;
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color:  #666;
+  text-decoration: none;
+  width:  400px;
+}
+
+.hero-header{
+	background-color: red;
+}
+
+.hero-header img{
+	height: 400px;
+}
+
+.hero-html{
+	background-color:  lightblue;
+}
+
+.clean-html{
+	background-color: #86c129;
+}
+
+.clean-header{
+	background-color: #0081e9;
+}
+
+.clean-header img{
+	height: 400px;
+}
+
 .companies{
 	margin: 0 auto;
 	display: block;
@@ -82,12 +112,34 @@ body{
 
 #results{
 	margin: 0 auto;
-	background-color: #555;
-	color: blue;
-	width: 50%;
+	background-color: #ddd;
+	color: black;
+	width: max-content;
 	align-text: center;
 }
 
+#results-text{
+	margin: 10px 50px;
+	text-align: center;
+}
+
+#result-image{
+	margin: 0 auto;
+	width: 500px;
+	display: block;
+}
+
 #return-button{
-	margin: auto 0;
+	margin: 0 auto;
+	display: block;
+	width: 50%;
+	border-radius: 5px;
+  	color: #000;
+  	font-size: 1.5rem;
+  	text-transform: uppercase;
+  	background-color:  #888;
+}
+
+#return-button:hover{
+	background-color: #bbb;
 }
