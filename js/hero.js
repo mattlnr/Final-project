@@ -2,7 +2,7 @@ const submit = document.querySelector("#submit-btn");
 const results = document.querySelector('#results');
 const resultsContainer = document.querySelector('#results-container');
 const form = document.querySelector('#quiz');
-const description = document.querySelector('#results-text')
+const description = document.querySelector('#results-text');
 const name = document.querySelector('#quiz-name');
 const resultImg = document.querySelector("#result-image");
 
