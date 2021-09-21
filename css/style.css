@@ -1,9 +1,38 @@
 header{
 	color: black;
-	background-color: #777799;
+	background-color: #E27d60;
 	text-align: center;
 	margin: 0;
 	padding: 0;
+	border-bottom: black solid 5px;
+}
+
+.heading{
+	display: flex;
+	height: 100px;
+	background-color: black;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	align-items: center;
+}
+
+.heading h1{
+	color: white;
+}
+
+.nav-words{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1200px;
+}
+
+.home-link{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
 }
 
 h2{
@@ -21,10 +50,32 @@ body{
 }
 
 .logo{
-	margin: 0 auto;
+	padding: 5px 5px;
+	margin: 0px 0px 0px 10px;
 	display: block;
-	width: 300px;
-	height: 350px;
+	height: 90%;
+}
+
+#intro-to-page{
+	padding: 10px 10px;
+	margin: 10px 30px;
+	text-align: center;
+}
+
+.fun-image{
+	height: 400px;
+}
+
+.side_info{
+	margin: 10px 100px;
+}
+
+.side_info h2{
+	font-size: 24px;
+}
+
+.side_info p{
+	font-size: 18px;
 }
 
 .top_three{
@@ -67,12 +118,28 @@ body{
   width:  400px;
 }
 
+.quiz_button:hover{
+	background-color: #444;
+}
+
+.gaming-header{
+	background-color: #222;
+	margin: 10px 0px;
+}
+
+.gaming-header img{
+	height: 350px;
+	padding: 10px 5px;
+}
+
 .hero-header{
 	background-color: red;
+	margin: 10px 0px;
 }
 
 .hero-header img{
-	height: 400px;
+	height: 350px;
+	padding: 20px 5px 0px 5px;
 }
 
 .hero-html{
@@ -88,7 +155,7 @@ body{
 }
 
 .clean-header img{
-	height: 400px;
+	height: 350px;
 }
 
 .companies{
@@ -124,22 +191,28 @@ body{
 }
 
 #result-image{
-	margin: 0 auto;
+	margin: 10px auto;
 	width: 500px;
 	display: block;
 }
 
 #return-button{
-	margin: 0 auto;
+	margin: 20px auto;
 	display: block;
 	width: 50%;
 	border-radius: 5px;
-  	color: #000;
-  	font-size: 1.5rem;
-  	text-transform: uppercase;
-  	background-color:  #888;
+  color: #000;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color:  #888;
 }
 
 #return-button:hover{
 	background-color: #bbb;
+}
+
+.footer{
+	background-color: black;
+	color: white;
+	margin: 0px;
 }

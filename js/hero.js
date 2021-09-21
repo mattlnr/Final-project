@@ -3,6 +3,7 @@ const results = document.querySelector('#results');
 const resultsContainer = document.querySelector('#results-container');
 const form = document.querySelector('#quiz');
 const description = document.querySelector('#results-text')
+const name = document.querySelector('#quiz-name');
 const resultImg = document.querySelector("#result-image");
 
 let imgOne = "img/hero.jpg";
@@ -48,6 +49,7 @@ function checkQuiz(event){
 	resultsContainer.classList.remove('hide');
 	resultsContainer.classList.add('show');
 	form.classList.add('hide');
+	name.classList.add('hide');
 };
 
 const goBack = document.querySelector("#return-button");
@@ -58,4 +60,5 @@ function loadForm(){
 	resultsContainer.classList.add('hide');
 	resultsContainer.classList.remove('show');
 	form.classList.remove('hide');
+	name.classList.remove('hide');
 }
