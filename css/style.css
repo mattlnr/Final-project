@@ -11,6 +11,10 @@ header{
 	border-bottom: black solid 5px;
 }
 
+button:hover{
+	cursor: pointer;
+}
+
 .heading{
 	display: flex;
 	height: 100px;
@@ -98,27 +102,31 @@ body{
 	display:  flex;
 	justify-content: center;
   margin: 40px 5px;
+  height: 250px;
 }
 
 .container_one{
 	display: block;
-  	border-right: 1px gray solid;
-  	padding: 5px 15px;
-  	width: 33%;
+  border-right: 1px gray solid;
+  padding: 5px 15px;
+  width: 33%;
+  position: relative;
 }
 
 .container_two{
 	display: block;
-  	border-right: 1px gray solid;
-  	padding: 5px 15px;
-  	width: 33%;
+  border-right: 1px gray solid;
+  padding: 5px 15px;
+  width: 33%;
+  position: relative;
 }
 
 .container_three{
 	display: block;
-  	border-right: 1px gray solid;
-  	padding: 5px 15px;
-  	width: 33%;
+  border-right: 1px gray solid;
+  padding: 5px 15px;
+  width: 33%;
+  position: relative;
 }
 
 .quiz_button {
@@ -127,11 +135,14 @@ body{
   display: block;
   font-size: 1.5rem;
   padding: 10px 30px;
-  margin: 5px auto;
+  margin: 10px auto;
   text-align: center;
   text-transform: uppercase;
   background-color: #999;
   width: 70%;
+  position: absolute;
+  bottom: 5px;
+  left: 15%;
 }
 
 a{
@@ -202,6 +213,9 @@ label{
 	display: none;
 }
 
+.ans:hover{
+	cursor: pointer;
+}
 #submit-btn{
 	margin: 50px auto;
 	display: block;
@@ -211,6 +225,10 @@ label{
   font-size: 1.5rem;
   text-transform: uppercase;
   background-color:  #aaa;
+}
+
+#submit-btn:hover{
+	background-color: #555;
 }
 
 #results{

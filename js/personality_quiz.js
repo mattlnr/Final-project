@@ -30,19 +30,19 @@ function checkQuiz(event){
 		imgToSet = imgOne;
 	} else if(total > 10) {
 		results.innerText = "Xbox!";
-		description.innerText = "Based on your answers, "
+		description.innerText = "Based on your answers, you are a fairly hardcore gamer and an Xbox would be your friend!"
 		imgToSet = imgTwo;
 	} else if (total > -10) {
 		results.innerText ="Nintendo!";
-		description.innerText = "Based on your answers, "
+		description.innerText = "Based on your answers, you enjoy some old and some new. You aren't the hardest or hardcore, but you aren't entirely casual either."
 		imgToSet = imgThree;
 	} else if (total > -25) {
 		results.innerText ="Sega!"
-		description.innerText = "Based on your answers, "
+		description.innerText = "Based on your answers, newer games might not be your thing anf you enjoy more casual games. You may even be a retro fanatic. Dreamcast anyone?"
 		imgToSet = imgFour;
 	} else {
 		results.innerText ="Atari!"
-		description.innerText = "Based on your answers, "
+		description.innerText = "Based on your answers, you are truly old school and don't care what it looks like or don't care for story at all. Pac-Man might be your jam."
 		imgToSet = imgFive;
 	}
 	resultImg.setAttribute("src", imgToSet);
