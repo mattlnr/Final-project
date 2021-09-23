@@ -1,3 +1,7 @@
+html{
+	font-family: arial;
+}
+
 header{
 	color: black;
 	background-color: #E27d60;
@@ -26,13 +30,14 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 1200px;
+	width: 100%;
 }
 
 .home-link{
 	text-decoration: none;
 	color: white;
 	font-size: 18px;
+	padding: 0px 20px;
 }
 
 h2{
@@ -64,24 +69,35 @@ body{
 
 .fun-image{
 	height: 400px;
+	width: 25%;
 }
 
-.side_info{
+.Second-side-image{
+	width: 25%;
+	height: 400px;
+}
+
+.side-info{
 	margin: 10px 100px;
+	border-left: solid black 3px;
+	border-right: solid black 3px;
+	padding: 0px 10px;
+	width: 45%;
 }
 
-.side_info h2{
+.side-info h2{
 	font-size: 24px;
 }
 
-.side_info p{
+.side-info p{
 	font-size: 18px;
+	text-align: justify-all;
 }
 
 .top_three{
 	display:  flex;
 	justify-content: center;
-  	margin-top: 30px;
+  margin: 40px 5px;
 }
 
 .container_one{
@@ -111,11 +127,15 @@ body{
   display: block;
   font-size: 1.5rem;
   padding: 10px 30px;
+  margin: 5px auto;
   text-align: center;
   text-transform: uppercase;
-  background-color:  #666;
-  text-decoration: none;
-  width:  400px;
+  background-color: #999;
+  width: 70%;
+}
+
+a{
+	text-decoration:  none;
 }
 
 .quiz_button:hover{
@@ -124,22 +144,22 @@ body{
 
 .gaming-header{
 	background-color: #222;
-	margin: 10px 0px;
 }
 
 .gaming-header img{
-	height: 350px;
-	padding: 10px 5px;
+	height:	350px;
+	width: 50%;
+	border: solid gray 1px;
 }
 
 .hero-header{
-	background-color: red;
-	margin: 10px 0px;
+	background-color: lightred;
 }
 
 .hero-header img{
 	height: 350px;
-	padding: 20px 5px 0px 5px;
+	width:  50%;
+	border: gray solid 1px;
 }
 
 .hero-html{
@@ -156,6 +176,12 @@ body{
 
 .clean-header img{
 	height: 350px;
+	width: 50%;
+	border: gray solid 1px;
+}
+
+label{
+	padding: 10px 20px 0px 5px;
 }
 
 .companies{
@@ -165,8 +191,7 @@ body{
 }
 
 .radio-container{
-	display: flex;
-	margin: 20px 20px;
+	margin: 20px 40px 20px 10px;
 }
 
 .show{
@@ -175,6 +200,17 @@ body{
 
 .hide{
 	display: none;
+}
+
+#submit-btn{
+	margin: 50px auto;
+	display: block;
+	width: 50%;
+	border-radius: 5px;
+  color: #000;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color:  #aaa;
 }
 
 #results{
@@ -215,4 +251,5 @@ body{
 	background-color: black;
 	color: white;
 	margin: 0px;
+	padding: 30px 5px;
 }
